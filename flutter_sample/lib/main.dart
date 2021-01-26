@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sample/kakaoSample.dart';
 import 'package:kakao_flutter_sdk/all.dart';
 
+import 'CameraSample.dart';
+
 void main() {
   KakaoContext.clientId = "e6850a095ecbacb2911f82b1fcca08c2";
 
@@ -29,6 +31,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +49,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => KakaoSample(),));
                 },
               ),
-            )
+            ),
+            Card(
+              child: ListTile(
+                title: Text('Camera sample'),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => CameraSample(),));
+                },
+              ),
+            ),
           ],
         ),
       ),
