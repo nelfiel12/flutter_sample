@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/AudioRecord.dart';
+import 'package:flutter_sample/PlatformChannelTest.dart';
+import 'package:flutter_sample/ShareTest.dart';
 import 'package:flutter_sample/kakaoSample.dart';
 import 'package:kakao_flutter_sdk/all.dart';
 
@@ -55,6 +58,30 @@ class _MyHomePageState extends State<MyHomePage> {
                 title: Text('Camera sample'),
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => CameraSample(),));
+                },
+              ),
+            ),
+            Card(
+              child: ListTile(
+                title: Text('Audio recording'),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => AudioRecord(),));
+                },
+              ),
+            ),
+            Card(
+              child: ListTile(
+                title: Text('Platform'),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => PlatformChannelTest(),));
+                },
+              ),
+            ),
+            Card(
+              child: ListTile(
+                title: Text('Share'),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => ShareTestWidget(),));
                 },
               ),
             ),
