@@ -20,7 +20,7 @@ class ShareTestWidgetState extends State<ShareTestWidget> {
         children: [
           Card(
             child: ListTile(title: Text('share'), onTap: () async {
-              Share.share('test', subject: 'test subject', sharePositionOrigin: );
+              Share.share('test', subject: 'test subject');
             },),
           ),
         ],

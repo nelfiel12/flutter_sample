@@ -16,7 +16,9 @@ void debug(String value) {
       '.'
       '${time.microsecond.toString().padLeft(3, '0')} : $value';
 
-  dev.log(log, name: 'debug');
+
+  print(log);
+  //dev.log(log, name: 'debug');
 }
 
 void error(String value) {
@@ -35,5 +37,6 @@ void error(String value) {
       '.'
       '${time.microsecond.toString().padLeft(3, '0')} : $value';
 
-  dev.log(log, name: 'error');
+  //dev.log(log, name: 'error');
+  print(log);
 }
